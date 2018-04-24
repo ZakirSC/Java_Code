@@ -33,5 +33,13 @@ public class CountriesController {
         modelMap.addAttribute("city", city);
         return "countries_page";
     }
+    @GetMapping("/search")
+    public String searchCityByName(@ModelAttribute("model") ModelMap modelMap,
+                                   @RequestParam("search") String search){
+        modelMap.addAttribute("search", search);
+        City cityByName = cityService.findByName(search);
+        modelMap.addAttribute("cityByName", cityByName);
+        return "search";
+    }
 
 }

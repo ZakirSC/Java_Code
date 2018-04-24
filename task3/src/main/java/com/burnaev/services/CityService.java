@@ -8,4 +8,5 @@ import java.util.List;
 public interface CityService {
     List<City> findCitiesByCountryId(Long countryId);
     City findCityById(Long cityId);
+    City findByName(String cityName);
 }

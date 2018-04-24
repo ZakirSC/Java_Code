@@ -1,0 +1,178 @@
+/* 
+
+Coded by Mitch Satchwell
+
+For use with the image and HTML files it is supplied with only. 
+
+� Madkid.org, 2006, all rights reserved. 
+
+*/
+
+body {
+background-color: #FFFFFF;
+background-image: url('../img/01.jpg');
+background-repeat: repeat-x;
+font-family: Arial;
+font-size: 13px;
+color: #000000;
+text-align: center; 
+margin: 61px 0px 0px 0px; 
+}
+
+a:link { 
+text-decoration: none; 
+font-weight: bold; 
+color: #265A5B; 
+}
+
+a:visited { 
+text-decoration: none; 
+font-weight: bold; 
+color: #255758; 
+}
+
+a:active { 
+text-decoration: none; 
+font-weight: bold; 
+color: #000000; 
+}
+
+a:hover { 
+text-decoration: none; 
+font-weight: bold; 
+color: #000000; 
+}
+
+#left a:link { 
+text-decoration: none; 
+font-weight: normal; 
+color: #000000; 
+}
+
+#left a:visited { 
+text-decoration: none; 
+font-weight: normal; 
+color: #000000; 
+}
+
+#left a:active { 
+text-decoration: none; 
+font-weight: normal; 
+color: #BEE3E4; 
+}
+
+#left a:hover { 
+text-decoration: none; 
+font-weight: bold; 
+color: #BEE3E4; 
+}
+
+h1 {
+font-family: Arial; 
+font-weight: bold; 
+color: #449FA7; 
+text-transform: uppercase; 
+font-size: 13px; 
+margin: 0px 0px 0px 0px; 
+}
+
+h1:first-letter {
+font-family: Arial; 
+font-weight: bold; 
+color: #449FA7; 
+text-transform: uppercase; 
+font-size: 16px; 
+margin: 0px 0px 0px 0px; 
+}
+
+h2 {
+font-family: Arial; 
+font-weight: bold; 
+color: #449FA7; 
+text-transform: uppercase; 
+font-size: 13px; 
+margin: 0px 0px 0px 5px; 
+}
+
+h2:first-letter {
+font-family: Arial; 
+font-weight: bold; 
+color: #449FA7; 
+text-transform: uppercase; 
+font-size: 16px; 
+margin: 0px 0px 0px 0px; 
+}
+
+hr {
+border: none; 
+background-color: #CFEAEB; 
+color: #CFEAEB; 
+height: 1px; 
+width: 140px;
+margin: 2px 0px 4px 0px;  
+}
+
+p.side {
+font-family: Arial;
+font-size: 13px;
+color: #000000;
+margin: 0px 0px 0px 13px;
+text-align: left; 
+}
+
+p {
+font-family: Arial;
+font-size: 13px;
+color: #000000;
+text-align: justify;
+margin: 4px 0px 0px 0px;
+}
+
+#container { 
+background-color: #FFFFFF; 
+background-image: url('../img/03.jpg');
+background-repeat: repeat-y;
+margin: auto;
+position:relative;
+padding: 0px; 
+width: 697px;
+text-align: left; 
+} 
+
+#top {
+background-image: url('../img/02.jpg');
+background-repeat: no-repeat; 
+background-color: #FFFFFF; 
+width: 697px;
+height: 182px; 
+}
+
+#left {
+position: relative;
+margin: 0px 0px 0px 25px;
+width: 140px;
+background-color: #FFFFFF; 
+float: left;
+}
+
+#main {
+position: relative;
+width: 477px;
+background-color: #FFFFFF; 
+margin: 0px 0px 2px 193px;  
+min-height: 0px; 
+}
+
+.clear {
+width: 450px;
+height: 14px; 
+background-color: #FFFFFF; 
+}
+
+#footer {
+background-image: url('../img/04.jpg');
+background-repeat: no-repeat; 
+background-color: #FFFFFF; 
+width: 697px;
+height: 25px; 
+}
