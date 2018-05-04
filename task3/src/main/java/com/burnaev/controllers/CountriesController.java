@@ -35,11 +35,15 @@ public class CountriesController {
     }
     @GetMapping("/search")
     public String searchCityByName(@ModelAttribute("model") ModelMap modelMap,
+                                   @RequestParam(value = "cityid", defaultValue = "1") Long cityId,
                                    @RequestParam("search") String search){
         modelMap.addAttribute("search", search);
-        City cityByName = cityService.findByName(search);
-        modelMap.addAttribute("cityByName", cityByName);
+//        City cityByName = cityService.findByName(search);
+//        modelMap.addAttribute("cityByName", cityByName);
+        List<City> citiesByLetter = cityService.findCitiesByLetters(search);
+        modelMap.addAttribute("citiesByLetter", citiesByLetter);
+        City city = cityService.findCityById(cityId);
+        modelMap.addAttribute("city", city);
         return "search";
     }
-
 }

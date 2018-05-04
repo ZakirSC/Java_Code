@@ -26,4 +26,9 @@ public class CityServiceImpl implements CityService {
     public City findByName(String cityName) {
         return cityRepository.findOneByName(cityName);
     }
+
+    @Override
+    public List<City> findCitiesByLetters(String letter) {
+        return cityRepository.findAllByNameLikeLetter("%" + letter + "%");
+    }
 }

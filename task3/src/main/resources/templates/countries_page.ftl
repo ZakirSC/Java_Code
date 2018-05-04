@@ -38,13 +38,15 @@
         </div>
     <p class="side"><#list model.cities as city>
         <p><a href="/countries?id=${city.country.id}&cityid=${city.id}">${city.name}</a></p>
-    </#list> </p>
+    </#list>
+        </p>
     </div>
     <div id="main">
         <form title="Поиск" action="/search" name="search" method="get">
             <input type="text" name="search" placeholder="введите имя города" onfocus="clearText(this)"
                    onblur="clearText(this)">
-            <button type="submit">поиск</button></form>
+            <button type="submit">поиск</button>
+        </form>
         <h1>Город на карте: ${model.city.name}</h1>
         <p>${model.city.urlMap}</p>
         <div class="clear"></div>
@@ -53,6 +55,7 @@
 
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
-    Тестовое задание Бурнаева Закира</div>
+    Тестовое задание Бурнаева Закира
+</div>
 </body>
 </html>

@@ -9,10 +9,10 @@
 
 <body>
 <div id="container">
-<#if model.cityByName??>
+<#if model.citiesByLetter??>
     <div id="top"></div>
     <div id="left">
-        <h2>Выберите страну</h2>
+        <h2>Список городов</h2>
         <div class="hr">
             <hr/>
         </div>
@@ -35,8 +35,10 @@
             <input type="text" name="search" placeholder="введите имя города" onfocus="clearText(this)"
                    onblur="clearText(this)">
             <button type="submit">поиск</button></form>
-        <h1>Город на карте: ${model.cityByName.name}</h1>
-        <p>${model.cityByName.urlMap}</p>
+        <h1>Нажмите на имя города для просмотра на карте</h1>
+        <p><#list model.citiesByLetter as city>
+        <p><a href="/countries?id=${city.country.id}&cityid=${city.id}">${city.name}</a></p>
+    </#list></p>
         <div class="clear"></div>
     </div>
     <div id="footer"></div>
